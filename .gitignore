@@ -1,0 +1,32 @@
+# Maven
+target/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# JMeter
+*.jtl
+!**/Experiment-99/results.jtl
+report/
+
+# Selenium
+screenshots/
+evidence/
+
+# Test logs
+test-log.txt
+results.csv
+
+# Compiled
+*.jar
+*.war
