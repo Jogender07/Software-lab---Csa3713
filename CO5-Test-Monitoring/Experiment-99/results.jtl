@@ -1,6 +1,0 @@
-timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1731800000000,150,Home,200,OK,Thread Group 1-1,text,true,,2048,256,1,1,http://localhost:8080/,140,0,10
-1731800000500,220,Login,200,OK,Thread Group 1-1,text,true,,1024,256,1,1,http://localhost:8080/login,210,0,10
-1731800001000,180,Dashboard,200,OK,Thread Group 1-1,text,true,,4096,256,1,1,http://localhost:8080/dashboard,170,0,10
-1731800001500,310,Search,200,OK,Thread Group 1-1,text,true,,3072,256,1,1,http://localhost:8080/search,300,0,10
-1731800002000,190,Home,200,OK,Thread Group 1-1,text,true,,2048,256,1,1,http://localhost:8080/,180,0,10

@@ -1,314 +1,106 @@
-# CSA37 - Software Testing Laboratory (100 Experiments)
+# CSA37 - Software Testing Laboratory (Experiments 1 to 60)
 
 [![Java 17+](https://img.shields.io/badge/Java-17%2B-ED8B00?logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
 [![Maven](https://img.shields.io/badge/Maven-3.9%2B-C71A36?logo=apachemaven&logoColor=white)](https://maven.apache.org/)
 [![JUnit 5](https://img.shields.io/badge/JUnit-5.10.2-25A162?logo=junit5&logoColor=white)](https://junit.org/junit5/)
 [![Selenium 4](https://img.shields.io/badge/Selenium-4.18.1-43B02A?logo=selenium&logoColor=white)](https://www.selenium.dev/)
 [![Apache JMeter](https://img.shields.io/badge/JMeter-5.6%2B-D22128?logo=apache&logoColor=white)](https://jmeter.apache.org/)
-[![JaCoCo](https://img.shields.io/badge/Coverage-JaCoCo-red)](https://www.jacoco.org/)
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)]()
 
-A comprehensive, production-grade GitHub repository containing all **100 laboratory experiments** from the official **SIMATS Engineering CSA37 Software Testing Laboratory Manual**.
+A complete, production-grade repository containing the first **60 experiments (CO1, CO2, and CO3)** for **CSA37 - Software Testing Laboratory** (SIMATS Engineering, Saveetha Institute of Medical and Technical Sciences).
 
-The experiments cover the complete testing spectrum—from fundamental verification/validation principles and black-box/white-box test case design to multi-tier integration suites, full Selenium browser automation, and high-concurrency Apache JMeter performance stress engineering.
-
----
-
-## Repository Architecture
-
-The project is structured according to the 5 Course Outcomes (CO1 to CO5) defined in the curriculum:
-
-```
-CSA37-Software-Testing-Lab/
-├── pom.xml                                   # Root Maven POM (JUnit 5, Selenium 4, JaCoCo, Surefire)
-├── mvn.bat                                   # JDK 27 & Maven wrapper script
-├── .gitignore                                # Git ignore rules for build artifacts & temporary files
-├── README.md                                 # Master repository documentation (this file)
-│
-├── CO1-Testing-Fundamentals/                 # Experiments 01 - 20 (CO1)
-│   ├── README.md                             # CO1 Overview & Module Index
-│   ├── Experiment-01/ to Experiment-04/      # Manual Testing (Charters, Sessions, Defect Reports)
-│   ├── Experiment-05/ to Experiment-10/      # JUnit 5 Unit Tests (Math, String, Leap Year, Auth)
-│   ├── Experiment-11/ to Experiment-15/      # Selenium WebDriver Automation Scripts
-│   └── Experiment-16/ to Experiment-20/      # Apache JMeter Test Plans (.jmx)
-│
-├── CO2-Test-Case-Design/                     # Experiments 21 - 40 (CO2)
-│   ├── README.md                             # CO2 Overview & Module Index
-│   ├── Experiment-21/ to Experiment-24/      # Manual EP, BVA, Decision Tables, State Transitions
-│   ├── Experiment-25/ to Experiment-30/      # JUnit EP, BVA, Branch, Condition & Basis Path Testing
-│   ├── Experiment-31/ to Experiment-35/      # Selenium Validation, Locators, Alerts & Popups
-│   └── Experiment-36/ to Experiment-40/      # JMeter CSV Parameterization & User Journeys
-│
-├── CO3-Testing-Levels/                       # Experiments 41 - 60 (CO3)
-│   ├── README.md                             # CO3 Overview & Module Index
-│   ├── Experiment-41/ to Experiment-44/      # Manual Smoke, Regression, System & UAT Testing
-│   ├── Experiment-45/ to Experiment-50/      # JUnit Stubs/Drivers, Integration, Lifecycle & Suites
-│   ├── Experiment-51/ to Experiment-55/      # Selenium Session, Dynamic Waits & File Uploads
-│   └── Experiment-56/ to Experiment-60/      # JMeter Load, Session Cookie & REST API Testing
-│
-├── CO4-Test-Planning/                        # Experiments 61 - 80 (CO4)
-│   ├── README.md                             # CO4 Overview & Module Index
-│   ├── Experiment-61/ to Experiment-64/      # Manual IEEE 829 Plan, RTM, Test Policy & Strategy
-│   ├── Experiment-65/ to Experiment-70/      # JUnit Surefire, @DisplayName, @Nested, TestWatcher
-│   ├── Experiment-71/ to Experiment-75/      # Selenium Page Object Model, Data-Driven & Windows
-│   └── Experiment-76/ to Experiment-80/      # JMeter Organization, POST JSON & Non-GUI CLI
-│
-├── CO5-Test-Monitoring/                      # Experiments 81 - 100 (CO5)
-│   ├── README.md                             # CO5 Overview & Module Index
-│   ├── Experiment-81/ to Experiment-84/      # Manual Defect Tracking, IEEE Summary & Git Review
-│   ├── Experiment-85/ to Experiment-90/      # JUnit JaCoCo Coverage, Timeouts, Launcher & Flaky
-│   ├── Experiment-91/ to Experiment-95/      # Selenium CSV Logging, Broken Links & Defect Evidence
-│   └── Experiment-96/ to Experiment-100/     # JMeter Stress, Soak, Python Analysis & Spike Tests
-│
-├── src/                                      # Consolidated Executable Java & Test Sources
-│   ├── main/java/com/csa37/                  # Production classes (all 5 COs)
-│   └── test/java/com/csa37/                  # Test suites (JUnit 5, Parameterized, TestWatcher)
-│
-└── jmeter-plans/                             # All 25 Standalone Apache JMeter Test Plans (.jmx)
-```
+Each experiment is organized in its dedicated folder (`exp1` to `exp60`):
+- **Manual Testing Experiments**: Include full **Aim**, **Pre-requisites & Environment**, **Algorithm**, **Test Cases / Bug Reports / Decision Tables**, **Expected Output**, **Actual Execution Status**, and **Result**.
+- **Automated Testing Programs (JUnit 5, Selenium WebDriver 4, Apache JMeter)**: Include full source code files (`.java`, `.jmx`), syntax-highlighted code blocks, CLI execution instructions, terminal outputs, and results.
 
 ---
 
-## Course Outcomes & Distribution
+## 📑 Master Index of Experiments (exp1 to exp60)
 
-| Course Outcome | Description | Manual | JUnit 5 | Selenium 4 | JMeter | Total |
-|---|---|:---:|:---:|:---:|:---:|:---:|
-| **CO1** | Testing Fundamentals and Principles | 4 | 6 | 5 | 5 | **20** |
-| **CO2** | Test Case Design Techniques | 4 | 6 | 5 | 5 | **20** |
-| **CO3** | Testing Levels and Integration Testing | 4 | 6 | 5 | 5 | **20** |
-| **CO4** | Test Planning and Test Documentation | 4 | 6 | 5 | 5 | **20** |
-| **CO5** | Test Monitoring, Control, Measurement and Reviews | 4 | 6 | 5 | 5 | **20** |
-| **Total** | **All 5 Course Outcomes** | **20** | **30** | **25** | **25** | **100** |
-
----
-
-## Technologies & Environment
-
-- **Programming Language**: Java 17+ (Tested and verified with Oracle JDK 27)
-- **Build & Dependency Tool**: Apache Maven 3.9+
-- **Unit & Integration Framework**: JUnit 5 (JUnit Jupiter 5.10.2, JUnit Platform Suite 1.10.2, JUnit Platform Launcher 1.10.2)
-- **Code Coverage**: JaCoCo Maven Plugin 0.8.11
-- **Browser Automation**: Selenium WebDriver 4.18.1 with Selenium Manager (ChromeDriver / FirefoxDriver)
-- **Performance & Load Testing**: Apache JMeter 5.6+
-- **Log Analysis**: Python 3 (Statistical CSV / JTL analysis)
-
----
-
-## Master Table of All 100 Experiments
-
-| Exp # | Title | Category | CO | Deliverables & Instructions |
-|---|---|---|---|---|
-| **1** |  | Manual | CO1 | [Experiment-01](CO1-Testing-Fundamentals/Experiment-01/README.md) |
-| **2** |  | Manual | CO1 | [Experiment-02](CO1-Testing-Fundamentals/Experiment-02/README.md) |
-| **3** |  | Manual | CO1 | [Experiment-03](CO1-Testing-Fundamentals/Experiment-03/README.md) |
-| **4** |  | Manual | CO1 | [Experiment-04](CO1-Testing-Fundamentals/Experiment-04/README.md) |
-| **5** |  | JUnit 5 | CO1 | [Experiment-05](CO1-Testing-Fundamentals/Experiment-05/README.md) |
-| **6** |  | JUnit 5 | CO1 | [Experiment-06](CO1-Testing-Fundamentals/Experiment-06/README.md) |
-| **7** |  | JUnit 5 | CO1 | [Experiment-07](CO1-Testing-Fundamentals/Experiment-07/README.md) |
-| **8** |  | JUnit 5 | CO1 | [Experiment-08](CO1-Testing-Fundamentals/Experiment-08/README.md) |
-| **9** |  | JUnit 5 | CO1 | [Experiment-09](CO1-Testing-Fundamentals/Experiment-09/README.md) |
-| **10** |  | JUnit 5 | CO1 | [Experiment-10](CO1-Testing-Fundamentals/Experiment-10/README.md) |
-| **11** |  | Selenium 4 | CO1 | [Experiment-11](CO1-Testing-Fundamentals/Experiment-11/README.md) |
-| **12** |  | Selenium 4 | CO1 | [Experiment-12](CO1-Testing-Fundamentals/Experiment-12/README.md) |
-| **13** |  | Selenium 4 | CO1 | [Experiment-13](CO1-Testing-Fundamentals/Experiment-13/README.md) |
-| **14** |  | Selenium 4 | CO1 | [Experiment-14](CO1-Testing-Fundamentals/Experiment-14/README.md) |
-| **15** |  | Selenium 4 | CO1 | [Experiment-15](CO1-Testing-Fundamentals/Experiment-15/README.md) |
-| **16** |  | Apache JMeter | CO1 | [Experiment-16](CO1-Testing-Fundamentals/Experiment-16/README.md) |
-| **17** |  | Apache JMeter | CO1 | [Experiment-17](CO1-Testing-Fundamentals/Experiment-17/README.md) |
-| **18** |  | Apache JMeter | CO1 | [Experiment-18](CO1-Testing-Fundamentals/Experiment-18/README.md) |
-| **19** |  | Apache JMeter | CO1 | [Experiment-19](CO1-Testing-Fundamentals/Experiment-19/README.md) |
-| **20** |  | Apache JMeter | CO1 | [Experiment-20](CO1-Testing-Fundamentals/Experiment-20/README.md) |
-| **21** |  | Manual | CO2 | [Experiment-21](CO2-Test-Case-Design/Experiment-21/README.md) |
-| **22** |  | Manual | CO2 | [Experiment-22](CO2-Test-Case-Design/Experiment-22/README.md) |
-| **23** |  | Manual | CO2 | [Experiment-23](CO2-Test-Case-Design/Experiment-23/README.md) |
-| **24** |  | Manual | CO2 | [Experiment-24](CO2-Test-Case-Design/Experiment-24/README.md) |
-| **25** |  | JUnit 5 | CO2 | [Experiment-25](CO2-Test-Case-Design/Experiment-25/README.md) |
-| **26** |  | JUnit 5 | CO2 | [Experiment-26](CO2-Test-Case-Design/Experiment-26/README.md) |
-| **27** |  | JUnit 5 | CO2 | [Experiment-27](CO2-Test-Case-Design/Experiment-27/README.md) |
-| **28** |  | JUnit 5 | CO2 | [Experiment-28](CO2-Test-Case-Design/Experiment-28/README.md) |
-| **29** |  | JUnit 5 | CO2 | [Experiment-29](CO2-Test-Case-Design/Experiment-29/README.md) |
-| **30** |  | JUnit 5 | CO2 | [Experiment-30](CO2-Test-Case-Design/Experiment-30/README.md) |
-| **31** |  | Selenium 4 | CO2 | [Experiment-31](CO2-Test-Case-Design/Experiment-31/README.md) |
-| **32** |  | Selenium 4 | CO2 | [Experiment-32](CO2-Test-Case-Design/Experiment-32/README.md) |
-| **33** |  | Selenium 4 | CO2 | [Experiment-33](CO2-Test-Case-Design/Experiment-33/README.md) |
-| **34** |  | Selenium 4 | CO2 | [Experiment-34](CO2-Test-Case-Design/Experiment-34/README.md) |
-| **35** |  | Selenium 4 | CO2 | [Experiment-35](CO2-Test-Case-Design/Experiment-35/README.md) |
-| **36** |  | Apache JMeter | CO2 | [Experiment-36](CO2-Test-Case-Design/Experiment-36/README.md) |
-| **37** |  | Apache JMeter | CO2 | [Experiment-37](CO2-Test-Case-Design/Experiment-37/README.md) |
-| **38** |  | Apache JMeter | CO2 | [Experiment-38](CO2-Test-Case-Design/Experiment-38/README.md) |
-| **39** |  | Apache JMeter | CO2 | [Experiment-39](CO2-Test-Case-Design/Experiment-39/README.md) |
-| **40** |  | Apache JMeter | CO2 | [Experiment-40](CO2-Test-Case-Design/Experiment-40/README.md) |
-| **41** | Smoke Testing for a Messaging Application | Manual | CO3 | [Experiment-41](CO3-Testing-Levels/Experiment-41/README.md) |
-| **42** | Regression Testing for a Content Management System After Updates | Manual | CO3 | [Experiment-42](CO3-Testing-Levels/Experiment-42/README.md) |
-| **43** | System Testing for E-Commerce Checkout System | Manual | CO3 | [Experiment-43](CO3-Testing-Levels/Experiment-43/README.md) |
-| **44** | Acceptance Testing (UAT) for Hotel Reservation System | Manual | CO3 | [Experiment-44](CO3-Testing-Levels/Experiment-44/README.md) |
-| **45** | Unit Testing for Bank Account Management Application | JUnit 5 | CO3 | [Experiment-45](CO3-Testing-Levels/Experiment-45/README.md) |
-| **46** | Test Harness Using Stub and Driver for Fare Calculation Module | JUnit 5 | CO3 | [Experiment-46](CO3-Testing-Levels/Experiment-46/README.md) |
-| **47** | Integration Testing for Library Management System | JUnit 5 | CO3 | [Experiment-47](CO3-Testing-Levels/Experiment-47/README.md) |
-| **48** | Regression Test Suite Using Tags and Test Suites in JUnit 5 | JUnit 5 | CO3 | [Experiment-48](CO3-Testing-Levels/Experiment-48/README.md) |
-| **49** | JUnit Test Life Cycle Using a Stack Implementation | JUnit 5 | CO3 | [Experiment-49](CO3-Testing-Levels/Experiment-49/README.md) |
-| **50** | Parameterized Testing for Compound Interest Calculation | JUnit 5 | CO3 | [Experiment-50](CO3-Testing-Levels/Experiment-50/README.md) |
-| **51** | Regression Testing - Automated Login and Logout with Session Verification | Selenium 4 | CO3 | [Experiment-51](CO3-Testing-Levels/Experiment-51/README.md) |
-| **52** | System Testing - End-to-End Checkout Flow Automation | Selenium 4 | CO3 | [Experiment-52](CO3-Testing-Levels/Experiment-52/README.md) |
-| **53** | Smoke Testing - Automated Page Headings & Navigation Verification | Selenium 4 | CO3 | [Experiment-53](CO3-Testing-Levels/Experiment-53/README.md) |
-| **54** | Automated File Upload and Form Submission | Selenium 4 | CO3 | [Experiment-54](CO3-Testing-Levels/Experiment-54/README.md) |
-| **55** | Dynamic Content Waiting Using Explicit Wait | Selenium 4 | CO3 | [Experiment-55](CO3-Testing-Levels/Experiment-55/README.md) |
-| **56** | Load Testing of Student Information Portal Using Apache JMeter | Apache JMeter | CO3 | [Experiment-56](CO3-Testing-Levels/Experiment-56/README.md) |
-| **57** | Load Testing of Web-Based Examination System | Apache JMeter | CO3 | [Experiment-57](CO3-Testing-Levels/Experiment-57/README.md) |
-| **58** | Session Management and Cookie Handling Using HTTP Cookie Manager | Apache JMeter | CO3 | [Experiment-58](CO3-Testing-Levels/Experiment-58/README.md) |
-| **59** | Multi-Step Ticket Booking Flow Using Transaction Controller | Apache JMeter | CO3 | [Experiment-59](CO3-Testing-Levels/Experiment-59/README.md) |
-| **60** | REST API Testing of Weather Service Using Apache JMeter | Apache JMeter | CO3 | [Experiment-60](CO3-Testing-Levels/Experiment-60/README.md) |
-| **61** | Test Plan for Online Shopping Cart System (IEEE 829 Format) | Manual | CO4 | [Experiment-61](CO4-Test-Planning/Experiment-61/README.md) |
-| **62** | Positive and Negative Test Scenarios for Food Delivery Application | Manual | CO4 | [Experiment-62](CO4-Test-Planning/Experiment-62/README.md) |
-| **63** | Requirements Traceability Matrix (RTM) for Online Library System | Manual | CO4 | [Experiment-63](CO4-Test-Planning/Experiment-63/README.md) |
-| **64** | Test Policy and Test Strategy Document for Multi-Tier Enterprise Application | Manual | CO4 | [Experiment-64](CO4-Test-Planning/Experiment-64/README.md) |
-| **65** | Maven Surefire Test Execution and HTML Reporting | JUnit 5 | CO4 | [Experiment-65](CO4-Test-Planning/Experiment-65/README.md) |
-| **66** | Test Documentation Using @DisplayName and @Tag in JUnit 5 | JUnit 5 | CO4 | [Experiment-66](CO4-Test-Planning/Experiment-66/README.md) |
-| **67** | Test Data Table for Anagram Checker Using Parameterized Tests | JUnit 5 | CO4 | [Experiment-67](CO4-Test-Planning/Experiment-67/README.md) |
-| **68** | Test Data for Ticket Fare Calculation Using @MethodSource | JUnit 5 | CO4 | [Experiment-68](CO4-Test-Planning/Experiment-68/README.md) |
-| **69** | Hierarchical Test Organization Using @Nested in JUnit 5 | JUnit 5 | CO4 | [Experiment-69](CO4-Test-Planning/Experiment-69/README.md) |
-| **70** | Test Execution Logging Using JUnit 5 TestWatcher Extension | JUnit 5 | CO4 | [Experiment-70](CO4-Test-Planning/Experiment-70/README.md) |
-| **71** | Page Object Model (POM) Design Pattern in Selenium | Selenium 4 | CO4 | [Experiment-71](CO4-Test-Planning/Experiment-71/README.md) |
-| **72** | Data-Driven Testing from CSV File Using Selenium WebDriver | Selenium 4 | CO4 | [Experiment-72](CO4-Test-Planning/Experiment-72/README.md) |
-| **73** | Capturing Screenshots as Test Evidence on Failure | Selenium 4 | CO4 | [Experiment-73](CO4-Test-Planning/Experiment-73/README.md) |
-| **74** | Cross-Browser Testing with Chrome and Firefox Using JUnit 5 | Selenium 4 | CO4 | [Experiment-74](CO4-Test-Planning/Experiment-74/README.md) |
-| **75** | Handling Multiple Browser Windows in Selenium WebDriver | Selenium 4 | CO4 | [Experiment-75](CO4-Test-Planning/Experiment-75/README.md) |
-| **76** | Organizing Test Plans with Variables, Defaults, and Listeners | Apache JMeter | CO4 | [Experiment-76](CO4-Test-Planning/Experiment-76/README.md) |
-| **77** | REST API Testing with HTTP POST and JSON Payload | Apache JMeter | CO4 | [Experiment-77](CO4-Test-Planning/Experiment-77/README.md) |
-| **78** | Non-GUI Mode Execution and HTML Dashboard Report Generation | Apache JMeter | CO4 | [Experiment-78](CO4-Test-Planning/Experiment-78/README.md) |
-| **79** | Smoke Testing of Critical Pages Using Duration Assertion | Apache JMeter | CO4 | [Experiment-79](CO4-Test-Planning/Experiment-79/README.md) |
-| **80** | Test Plan Parameterization Using JMeter Properties | Apache JMeter | CO4 | [Experiment-80](CO4-Test-Planning/Experiment-80/README.md) |
-| **81** | Defect Tracking and Life Cycle Management Using JIRA / Bugzilla | Manual | CO5 | [Experiment-81](CO5-Test-Monitoring/Experiment-81/README.md) |
-| **82** | Test Summary Report for Web Application (IEEE 829 Format) | Manual | CO5 | [Experiment-82](CO5-Test-Monitoring/Experiment-82/README.md) |
-| **83** | Test Status Reporting and Metrics Analysis | Manual | CO5 | [Experiment-83](CO5-Test-Monitoring/Experiment-83/README.md) |
-| **84** | Source Code Management (Git) and Peer Review Documentation | Manual | CO5 | [Experiment-84](CO5-Test-Monitoring/Experiment-84/README.md) |
-| **85** | Code Coverage Measurement of Armstrong Number Program Using JaCoCo | JUnit 5 | CO5 | [Experiment-85](CO5-Test-Monitoring/Experiment-85/README.md) |
-| **86** | Performance Monitoring with assertTimeout and @Timeout in JUnit 5 | JUnit 5 | CO5 | [Experiment-86](CO5-Test-Monitoring/Experiment-86/README.md) |
-| **87** | Controlling Test Execution with @Disabled and Assumptions | JUnit 5 | CO5 | [Experiment-87](CO5-Test-Monitoring/Experiment-87/README.md) |
-| **88** | Programmatic Test Execution Using JUnit Launcher | JUnit 5 | CO5 | [Experiment-88](CO5-Test-Monitoring/Experiment-88/README.md) |
-| **89** | Detecting Flaky Behavior Using @RepeatedTest in JUnit 5 | JUnit 5 | CO5 | [Experiment-89](CO5-Test-Monitoring/Experiment-89/README.md) |
-| **90** | Confirmation and Regression Testing After Defect Fix | JUnit 5 | CO5 | [Experiment-90](CO5-Test-Monitoring/Experiment-90/README.md) |
-| **91** | Automated Execution Status Logging to CSV in Selenium | Selenium 4 | CO5 | [Experiment-91](CO5-Test-Monitoring/Experiment-91/README.md) |
-| **92** | Automated Broken Link Detection Using Selenium and HttpURLConnection | Selenium 4 | CO5 | [Experiment-92](CO5-Test-Monitoring/Experiment-92/README.md) |
-| **93** | Automated Page Load Time Performance Monitoring | Selenium 4 | CO5 | [Experiment-93](CO5-Test-Monitoring/Experiment-93/README.md) |
-| **94** | Headless Browser Smoke Testing with ChromeOptions | Selenium 4 | CO5 | [Experiment-94](CO5-Test-Monitoring/Experiment-94/README.md) |
-| **95** | Defect Screenshot Capture and Error Evidence Archiving | Selenium 4 | CO5 | [Experiment-95](CO5-Test-Monitoring/Experiment-95/README.md) |
-| **96** | Multi-Stage File Upload Stress Testing Using Apache JMeter | Apache JMeter | CO5 | [Experiment-96](CO5-Test-Monitoring/Experiment-96/README.md) |
-| **97** | Response Time, Throughput, and Error Curve Analysis Under Load | Apache JMeter | CO5 | [Experiment-97](CO5-Test-Monitoring/Experiment-97/README.md) |
-| **98** | Soak Testing for Extended Duration and Stability Monitoring | Apache JMeter | CO5 | [Experiment-98](CO5-Test-Monitoring/Experiment-98/README.md) |
-| **99** | Automated JTL Analysis and Test Completion Evaluation (Python) | JMeter / Python | CO5 | [Experiment-99](CO5-Test-Monitoring/Experiment-99/README.md) |
-| **100** | Spike Testing with Synchronizing Timer Using Apache JMeter | Apache JMeter | CO5 | [Experiment-100](CO5-Test-Monitoring/Experiment-100/README.md) |
-
+| Exp # | Folder | Title | Type | Category | Deliverables & Code |
+|---|---|---|---|---|---|
+| **1** | [exp1](exp1/) | ATM System Defect Identification & Documentation | Manual | CO1 | Bug Report, Defect Classification, Execution Summary |
+| **2** | [exp2](exp2/) | Exploratory Testing on Inventory Management System | Manual | CO1 | 8 Charters, Tours, SFDIPOT, Session Sheets |
+| **3** | [exp3](exp3/) | Web-Based Form Submission Defect Reporting | Manual | CO1 | Defect Reports (WF-001 to WF-003), Severity/Priority |
+| **4** | [exp4](exp4/) | Loan Application Defect Classification & Repository | Manual | CO1 | Defect Repository, Defect Clustering, Prevention Plan |
+| **5** | [exp5](exp5/) | Factorial Calculation with JUnit Assertions | JUnit 5 | CO1 | `MathUtil.java`, `MathUtilTest.java` |
+| **6** | [exp6](exp6/) | Leap Year Check using JUnit Assertions | JUnit 5 | CO1 | `YearUtil.java`, `YearUtilTest.java` |
+| **7** | [exp7](exp7/) | Prime Number Verification with JUnit Assertions | JUnit 5 | CO1 | `PrimeUtil.java`, `PrimeUtilTest.java` |
+| **8** | [exp8](exp8/) | String Reversal and Palindrome Validation | JUnit 5 | CO1 | `StringUtil.java`, `StringUtilTest.java` |
+| **9** | [exp9](exp9/) | Exception Handling for Division with assertThrows | JUnit 5 | CO1 | `Calculator.java`, `CalculatorTest.java` |
+| **10** | [exp10](exp10/) | Security Testing Password Hashing & Authentication | JUnit 5 | CO1 | `AuthService.java`, `AuthServiceTest.java` |
+| **11** | [exp11](exp11/) | Open Chrome and Verify Web Page Title & URL | Selenium 4 | CO1 | `Exercise11.java` |
+| **12** | [exp12](exp12/) | Locate Web Elements (id, name, class, css, xpath) | Selenium 4 | CO1 | `Exercise12.java` |
+| **13** | [exp13](exp13/) | Automate Filling and Submission of a Web Form | Selenium 4 | CO1 | `Exercise13.java` |
+| **14** | [exp14](exp14/) | Automate Checkbox & Radio Button Selection | Selenium 4 | CO1 | `Exercise14.java` |
+| **15** | [exp15](exp15/) | Capture Screenshot of Web Page & Save Locally | Selenium 4 | CO1 | `Exercise15.java` |
+| **16** | [exp16](exp16/) | Basic Test Plan (Thread Group, HTTP Sampler, Listeners)| JMeter | CO1 | `Exercise16.jmx` |
+| **17** | [exp17](exp17/) | Defect Detection in Web Response using Response Assertion| JMeter | CO1 | `Exercise17.jmx` |
+| **18** | [exp18](exp18/) | HTTP Request Defaults & Header Manager for REST API | JMeter | CO1 | `Exercise18.jmx` |
+| **19** | [exp19](exp19/) | User Think Time Simulation using Constant Timer | JMeter | CO1 | `Exercise19.jmx` |
+| **20** | [exp20](exp20/) | Summary Report vs Aggregate Report Comparison | JMeter | CO1 | `Exercise20.jmx` |
+| **21** | [exp21](exp21/) | Equivalence Class Partitioning for Simple Calculator | Manual | CO2 | Input Partitions, Valid/Invalid Classes, 11 Test Cases |
+| **22** | [exp22](exp22/) | Boundary Value Analysis for Student Grade System | Manual | CO2 | 6-Point BVA Values, Grade Boundaries, 15 Test Cases |
+| **23** | [exp23](exp23/) | Black-Box Testing on Login Module | Manual | CO2 | Decision Table, Security Tests, 12 Test Cases |
+| **24** | [exp24](exp24/) | Test Data Generation for Ticket Booking Application | Manual | CO2 | Field Rules, Valid/Invalid Boundary Test Data (TD01-TD14) |
+| **25** | [exp25](exp25/) | Equivalence Class Partitioning Calculator in JUnit | JUnit 5 | CO2 | `Calculator.java`, `CalculatorEPTest.java` |
+| **26** | [exp26](exp26/) | Boundary Value Analysis Grading in JUnit | JUnit 5 | CO2 | `GradeEvaluator.java`, `GradeEvaluatorBVATest.java` |
+| **27** | [exp27](exp27/) | Voting Eligibility Validation BVA in JUnit | JUnit 5 | CO2 | `VoteChecker.java`, `VoteCheckerTest.java` |
+| **28** | [exp28](exp28/) | Statement Coverage on Bubble Sort Program | JUnit 5 | CO2 | `SortUtil.java`, `SortUtilTest.java` |
+| **29** | [exp29](exp29/) | Basis Path Coverage Testing on Payroll Calculation | JUnit 5 | CO2 | `Payroll.java`, `PayrollPathTest.java` (V(G)=4) |
+| **30** | [exp30](exp30/) | Branch Coverage on Finding Largest of Three Numbers | JUnit 5 | CO2 | `MaxFinder.java`, `MaxFinderTest.java` |
+| **31** | [exp31](exp31/) | Black-Box Login Page Testing Matrix | Selenium 4 | CO2 | `Exercise31.java` |
+| **32** | [exp32](exp32/) | Data-Driven Login Testing (JUnit 5 + Selenium) | Selenium 4 | CO2 | `LoginDataDrivenTest.java` |
+| **33** | [exp33](exp33/) | Automate Dropdown Selection using Select Class | Selenium 4 | CO2 | `Exercise33.java` |
+| **34** | [exp34](exp34/) | Numeric Input Boundary Value Testing | Selenium 4 | CO2 | `Exercise34.java` |
+| **35** | [exp35](exp35/) | Handle JS Alert, Confirm, and Prompt Popups | Selenium 4 | CO2 | `Exercise35.java` |
+| **36** | [exp36](exp36/) | Black-Box HTTP POST Sampler Login Request | JMeter | CO2 | `Exercise36.jmx` |
+| **37** | [exp37](exp37/) | Data-Driven Testing using CSV Data Set Config | JMeter | CO2 | `Exercise37.jmx`, `users.csv` |
+| **38** | [exp38](exp38/) | Dynamic Value Correlation using JSON Extractor | JMeter | CO2 | `Exercise38.jmx` |
+| **39** | [exp39](exp39/) | Test Flow Control (Loop, Once Only, If Controllers) | JMeter | CO2 | `Exercise39.jmx` |
+| **40** | [exp40](exp40/) | REST API Testing Status Codes & Response Data | JMeter | CO2 | `Exercise40.jmx` |
+| **41** | [exp41](exp41/) | Smoke Testing on New Version of Messaging App | Manual | CO3 | 10 Critical Checks, Build Acceptance Record |
+| **42** | [exp42](exp42/) | Regression Testing for Content Management System | Manual | CO3 | Impact Analysis, Regression Suite (RG01-RG10), Defect Log |
+| **43** | [exp43](exp43/) | System Testing Scenarios for E-Commerce Checkout | Manual | CO3 | 10 End-to-End Scenarios, Order/Stock Ledger State |
+| **44** | [exp44](exp44/) | Acceptance Testing for Hotel Reservation System | Manual | CO3 | Alpha/Beta Acceptance Matrix (AC01-AC10), UAT Sign-Off |
+| **45** | [exp45](exp45/) | Bank Account Management Unit Testing | JUnit 5 | CO3 | `BankAccount.java`, `BankAccountTest.java` |
+| **46** | [exp46](exp46/) | Test Harness using Stub and Driver for Fare Module | JUnit 5 | CO3 | `DistanceService.java`, `FareCalculator.java`, `FareCalculatorTest.java` |
+| **47** | [exp47](exp47/) | Integration Testing for Library Management System | JUnit 5 | CO3 | `Book.java`, `Member.java`, `Library.java`, `LibraryIntegrationTest.java` |
+| **48** | [exp48](exp48/) | Regression Test Suite using Tags & Test Suites | JUnit 5 | CO3 | `CartService.java`, `CartTest.java`, `RegressionSuiteTest.java` |
+| **49** | [exp49](exp49/) | JUnit Test Lifecycle using Stack Implementation | JUnit 5 | CO3 | `IntStack.java`, `IntStackTest.java` |
+| **50** | [exp50](exp50/) | Parameterized Compound Interest Calculation | JUnit 5 | CO3 | `CompoundInterest.java`, `CompoundInterestTest.java` |
+| **51** | [exp51](exp51/) | Automated Regression Testing for Login/Logout | Selenium 4 | CO3 | `Exercise51.java` |
+| **52** | [exp52](exp52/) | System Testing of End-to-End Checkout Flow | Selenium 4 | CO3 | `Exercise52.java` |
+| **53** | [exp53](exp53/) | Smoke Testing of Critical Website Pages | Selenium 4 | CO3 | `Exercise53.java` |
+| **54** | [exp54](exp54/) | Automate File Upload Functionality | Selenium 4 | CO3 | `Exercise54.java` |
+| **55** | [exp55](exp55/) | Test Dynamically Loaded Web Elements (Explicit Waits)| Selenium 4 | CO3 | `Exercise55.java` |
+| **56** | [exp56](exp56/) | Performance Testing on Student Portal | JMeter | CO3 | `Exercise56.jmx` |
+| **57** | [exp57](exp57/) | Load Testing for Web-Based Exam System | JMeter | CO3 | `Exercise57.jmx` |
+| **58** | [exp58](exp58/) | Session Management & HTTP Cookie Manager | JMeter | CO3 | `Exercise58.jmx` |
+| **59** | [exp59](exp59/) | End-to-End Flight Booking Flow Transaction Controller| JMeter | CO3 | `Exercise59.jmx` |
+| **60** | [exp60](exp60/) | API Testing of Weather Forecast Service | JMeter | CO3 | `Exercise60.jmx` |
 
 ---
 
-## Execution Guide
+## 🛠️ Execution & Verification
 
-### 1. Prerequisites
-- **Java Development Kit (JDK)**: JDK 17 or higher installed. Set `JAVA_HOME` to your JDK directory:
-  ```powershell
-  set JAVA_HOME=C:\Program Files\Java\jdk-27
-  set PATH=%JAVA_HOME%\bin;%PATH%
-  ```
-- **Apache Maven**: Included in `tools/apache-maven-3.9.6` or system-installed. Convenient wrapper `mvn.bat` is provided at the repository root.
-
----
-
-### 2. Executing JUnit 5 Tests via Maven
-
-#### Run all unit and integration tests across the entire repository:
+### Run All JUnit Tests with Maven:
 ```powershell
-.\mvn.bat test -Dtest=com.csa37.**.*Test
+mvn clean test
 ```
 
-#### Run tests for a specific Course Outcome (e.g., CO1):
+### Run an Individual JUnit Test:
 ```powershell
-.\mvn.bat test -Dtest=com.csa37.co1.**.*Test
+mvn test -Dtest=MathUtilTest
 ```
 
-#### Run a specific experiment test (e.g., Experiment 25 - Calculator EP):
+### Run Selenium Automation:
 ```powershell
-.\mvn.bat test -Dtest=com.csa37.co2.ex25.CalculatorEPTest
+javac -cp ".;lib/*" exp11/Exercise11.java
+java -cp ".;lib/*" exp11.Exercise11
 ```
 
-#### Generate JaCoCo Code Coverage Report:
+### Run Apache JMeter Plans via CLI:
 ```powershell
-.\mvn.bat clean test jacoco:report
+jmeter -n -t exp16/Exercise16.jmx -l results.jtl -e -o report
 ```
-View the HTML report at: `target/site/jacoco/index.html`
-
-#### Generate Maven Surefire HTML Test Report:
-```powershell
-.\mvn.bat surefire-report:report
-```
-View the report at: `target/site/surefire-report.html`
-
----
-
-### 3. Executing Selenium WebDriver Automation Scripts
-
-Compile project dependencies first:
-```powershell
-.\mvn.bat test-compile
-```
-
-Execute any standalone Selenium automation script directly:
-```powershell
-# Experiment 11: Basic Browser Navigation
-java -cp "target/classes;target/test-classes;target/dependency/*" com.csa37.co1.ex11.Exercise11
-
-# Experiment 52: End-to-End Checkout Flow
-java -cp "target/classes;target/test-classes;target/dependency/*" com.csa37.co3.ex52.Exercise52
-
-# Experiment 71: Page Object Model Login
-java -cp "target/classes;target/test-classes;target/dependency/*" com.csa37.co4.ex71.LoginTest
-
-# Experiment 94: Headless Smoke Test
-java -cp "target/classes;target/test-classes;target/dependency/*" com.csa37.co5.ex94.Exercise94
-```
-
----
-
-### 4. Executing Apache JMeter Performance Test Plans
-
-All 25 test plans are available under the `jmeter-plans/` folder and inside each respective experiment directory.
-
-#### Launch GUI Mode for Visual Inspection:
-```powershell
-jmeter -t jmeter-plans/Exercise16.jmx
-```
-
-#### Run in Non-GUI Mode with HTML Dashboard Generation:
-```powershell
-# Experiment 78: Non-GUI Load Test with Dashboard
-jmeter -n -t jmeter-plans/Exercise78.jmx -l results/ex78.jtl -e -o results/ex78_dashboard
-
-# Experiment 80: Dynamic Properties (-J)
-jmeter -n -t jmeter-plans/Exercise80.jmx -l results/ex80.jtl -Jusers=10 -Jrampup=5 -Jloops=3
-
-# Experiment 98: Soak Testing (30 minutes)
-jmeter -n -t jmeter-plans/Exercise98.jmx -l results/soak.jtl
-
-# Experiment 100: Spike Testing with Synchronizing Timer
-jmeter -n -t jmeter-plans/Exercise100.jmx -l results/spike.jtl
-```
-
-#### Analyze JTL Results using Python (Experiment 99):
-```powershell
-cd CO5-Test-Monitoring/Experiment-99
-python analyse.py
-```
-
----
-
-## Quality Control & Compliance
-
-- **Exact Lab Manual Fidelity**: All experiment titles, aims, algorithms, test data, and procedures strictly match the official *SIMATS Engineering CSA37 Software Testing Laboratory Manual*.
-- **No Mocked or Fake Results**: Every test case, script, and plan has been executed, compiled, and verified on JDK 27 with Maven 3.9.6.
-- **Zero Empty Folders**: Every experiment from 1 to 100 contains its own complete standalone documentation, source files, and execution guide.
-
----
-
-## License & Academic Disclaimer
-
-This project is developed for academic laboratory instruction and reference in accordance with the curriculum of the **Department of Computer Science and Engineering, SIMATS Engineering, Saveetha University**. All test applications used for demonstration (such as SauceDemo and The Internet Herokuapp) are publicly available web testing practice environments.
